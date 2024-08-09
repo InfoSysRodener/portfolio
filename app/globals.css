@@ -17,6 +17,10 @@
 }
 
 body {
+  font-family: var(--font-outfit);
+  background-color: '#FDF0D5';
+  margin: 0px;
+  padding: 0px;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

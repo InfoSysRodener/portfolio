@@ -10,8 +10,8 @@ export default function Resume() {
   })
 
   return (
-    <main ref={contentRef} className="relative m-auto max-w-3xl p-5 sm:p-8">
-      <div className="absolute right-0 top-1 sm:right-10 sm:top-10 ">
+    <main data-scroll-section ref={contentRef} className="relative m-auto max-w-3xl p-5 sm:p-8">
+      <div className="absolute right-3 top-3 sm:right-10 sm:top-10 ">
         <button onClick={handlePrint} className="print-button cursor-pointer text-xs text-gray-500 hover:text-blue-600 sm:text-sm">
           <FaRegFilePdf />
           Print
@@ -62,7 +62,10 @@ export default function Resume() {
         </div>
       </header>
       <section className="my-2 bg-gray-100">
-        <p className="my-2 px-2 py-3 text-sm">Experienced web developer with a passion for creating attractive and interactive websites that meet customer needs and exceed expectations.</p>
+        <p className="my-2 px-2 py-3 text-sm">
+          {/* Experienced web developer with a passion for creating attractive and interactive websites that meet customer needs and exceed expectations. */}
+          Skilled in both front-end and back-end development, with the ability to quickly adapt to any tech stack. Committed to delivering high-quality, innovative web solutions and optimizing user experiences.
+        </p>
       </section>
       <section>
         <header className="relative mb-3 after:absolute after:right-0 after:top-1/2 after:-z-10 after:block after:h-0.5 after:w-full after:bg-gray-300">
@@ -78,12 +81,13 @@ export default function Resume() {
             </ul>
           </div>
           <div>
-            <h3>JS Framework / Library</h3>
+            <h3>Framework / Library</h3>
             <ul>
               <li>Three js</li>
               <li>React js</li>
               <li>Next js</li>
               <li>Vue js</li>
+              <li>Tailwind Css</li>
             </ul>
           </div>
           <div>
