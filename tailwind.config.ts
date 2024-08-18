@@ -11,7 +11,14 @@ const config: Config = {
       fontFamily: {
         outfit: ['var(--font-outfit)'],
         pixel: ['var(--font-pixel)', 'sans-serif'],
-        tagalog:['var(--font-tagalog)']
+        tagalog: ['var(--font-tagalog)'],
+      },
+      colors: {
+        primary_red: '#780000',
+        secondary_red: '#C1121F',
+        primary_brown: '#FDF0D5',
+        primary_blue: '#003049',
+        secondary_blue: '#669bbc',
       },
     },
   },

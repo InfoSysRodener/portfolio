@@ -22,19 +22,15 @@ export function Cube() {
 
   const handleClick = (event: { object: THREE.Object3D<THREE.Object3DEventMap> }) => {
     const intersect = raycaster.intersectObject(event.object)
-    console.log('intersec', intersect[0])
+
     if (intersect.length > 0) {
       const index = intersect[0].instanceId
-      console.log('index', index)
 
       if (index !== undefined && rigidBodies.current) {
         const body = rigidBodies.current[index]
         if (body) {
-          // Update collider properties or perform actions
           body.applyImpulse({ x: 0, y: Math.random() * 100, z: 0 }, true)
           body.applyTorqueImpulse({ x: 0, y: Math.random() * 100, z: 0 }, true)
-          console.log(body)
-          console.log('Clicked on instance:', index)
         }
       }
     }
@@ -91,7 +87,7 @@ export function Floor() {
     <RigidBody type="fixed" restitution={0} friction={0.7}>
       <mesh position={[0, -1, 0]} rotation={[-Math.PI * 0.5, 0, 0]} receiveShadow>
         <planeGeometry args={[100, 100, 1]} />
-        <meshBasicMaterial opacity={0} />
+        <meshBasicMaterial opacity={0} color="#FDF0D5" />
       </mesh>
     </RigidBody>
   )

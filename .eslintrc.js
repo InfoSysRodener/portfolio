@@ -22,5 +22,6 @@ module.exports = {
   plugins: ['react'],
   rules: {
     // 'max-len': [2, 250],
+    'tailwindcss/classnames-order': 'off',
   },
 }

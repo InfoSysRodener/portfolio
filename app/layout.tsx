@@ -2,7 +2,7 @@ import React from 'react'
 import type { Metadata } from 'next'
 import { Outfit, Pixelify_Sans, Noto_Sans_Tagalog } from 'next/font/google'
 import './globals.css'
-import 'locomotive-scroll/dist/locomotive-scroll.css'
+// import 'locomotive-scroll/dist/locomotive-scroll.css'
 import { Layout } from '@/src/dom/Layout'
 
 const outfit = Outfit({

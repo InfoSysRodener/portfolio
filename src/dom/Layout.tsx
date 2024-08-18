@@ -3,6 +3,7 @@
 import React, { useRef } from 'react'
 import dynamic from 'next/dynamic'
 const Scene = dynamic(() => import('@/canvas/Scene'), { ssr: false })
+const Scroll = dynamic(() => import('@/dom/Scroll').then((mod) => mod.LocomotiveScroll), { ssr: false })
 
 const Layout = ({ children }: any) => {
   const ref = useRef(null)
@@ -14,10 +15,12 @@ const Layout = ({ children }: any) => {
         position: 'relative',
         width: ' 100%',
         height: '100%',
-        overflow: 'auto',
+        overflow: 'hidden',
         touchAction: 'auto',
       }}
     >
+      {/* <Scroll>
+        </Scroll> */}
       {children}
       <Scene
         style={{
@@ -27,6 +30,7 @@ const Layout = ({ children }: any) => {
           width: '100vw',
           height: '100vh',
           pointerEvents: 'none',
+          overflow: 'hidden',
         }}
         eventSource={ref}
         eventPrefix="client"

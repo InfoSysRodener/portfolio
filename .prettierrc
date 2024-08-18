@@ -3,9 +3,9 @@
   "useTabs": false,
   "semi": false,
   "singleQuote": true,
-  "printWidth": 250,
-  "plugins": ["prettier-plugin-tailwindcss"],
-  "tailwindConfig": "./tailwind.config.ts",
+  "printWidth": 200,
   "tailwindPreserveDuplicates": true,
-  "tailwindPreserveWhitespace": false
+  "tailwindPreserveWhitespace": false,
+  "tailwindConfig": "tailwind.config.ts",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
