@@ -14,7 +14,9 @@ const Wave = ({ inView, imagePath }: { inView: boolean; imagePath: string }) => 
 
   const colorMap = useLoader(THREE.TextureLoader, imagePath)
 
-  const PIXELS = [1, 1.5, 2, 2.5, 3, 1, 1.5, 2, 2.5, 3, 3.5, 4, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 20, 50].map((v) => v / 50)
+  const PIXELS = [
+    1, 1.5, 2, 2.5, 3, 1, 1.5, 2, 2.5, 3, 3.5, 4, 2, 2.5, 3, 3.5, 4, 4.5, 5, 5.5, 6, 3, 3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 20, 50,
+  ].map((v) => v / 50)
 
   const uniforms = {
     uTime: new THREE.Uniform(0),
@@ -61,14 +63,14 @@ const Wave = ({ inView, imagePath }: { inView: boolean; imagePath: string }) => 
   return (
     <mesh ref={setRefMesh}>
       <planeGeometry args={[1, 1]} />
-      <pixelMaterial
+      {/* <pixelMaterial
         key={PixelMaterial.key}
         uMouse={uniforms.uMouse}
         uTexture={texture}
         uPixels={PIXELS}
         uElementSize={new THREE.Vector2(elementSize[0], elementSize[1])}
         uTextureSize={new THREE.Vector2(textureSize[0], textureSize[1])}
-      />
+      /> */}
     </mesh>
   )
 }

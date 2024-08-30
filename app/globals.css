@@ -13,11 +13,14 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    --font-outfit: 'Outfit', sans-serif;
+    --font-pixel: 'Pixelify Sans', sans-serif;
+    --font-tagalog: 'Noto Sans Tagalog', sans-serif;
   }
 }
 
 body {
-  font-family: var(--font-outfit);
+  font-family: var(--font-outfit), var(--font-pixel), var(--font-tagalog);
   background-color: '#FDF0D5';
   margin: 0px;
   padding: 0px;
