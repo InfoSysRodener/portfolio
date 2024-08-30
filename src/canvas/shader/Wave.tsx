@@ -1,16 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 
 import * as THREE from 'three'
 import gsap from 'gsap'
 import { useFrame, useLoader } from '@react-three/fiber'
 import { useGSAP } from '@gsap/react'
-import PixelMaterial from './Pixel'
+// import PixelMaterial from './Pixel'
 
 const Wave = ({ inView, imagePath }: { inView: boolean; imagePath: string }) => {
   const [refMesh, setRefMesh] = useState<any>(null)
-  const [texture, setTexture] = useState<THREE.Texture>()
+  // const [texture, setTexture] = useState<THREE.Texture>()
   const [textureSize, setTextureSize] = useState([0, 0])
-  const [elementSize, setElementSize] = useState([0, 0])
+  // const [elementSize, setElementSize] = useState([0, 0])
 
   const colorMap = useLoader(THREE.TextureLoader, imagePath)
 
@@ -36,7 +37,7 @@ const Wave = ({ inView, imagePath }: { inView: boolean; imagePath: string }) => 
 
   useEffect(() => {
     if (colorMap) {
-      setTexture(colorMap)
+      // setTexture(colorMap)
       setTextureSize([colorMap.source.data.width, colorMap.source.data.height])
       colorMap.colorSpace = THREE.SRGBColorSpace
     }
@@ -56,7 +57,7 @@ const Wave = ({ inView, imagePath }: { inView: boolean; imagePath: string }) => 
     const clock = state.clock.getElapsedTime()
     uniforms.uTime.value = clock
     uniforms.uElementSize.value.set(state.size.width, state.size.height)
-    setElementSize([state.size.width, state.size.height])
+    // setElementSize([state.size.width, state.size.height])
     uniforms.uMouse.value.set(state.pointer.x, state.pointer.y)
   })
 
