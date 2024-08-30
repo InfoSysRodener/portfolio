@@ -43,11 +43,9 @@ const Title = () => {
     [textureDOM],
   )
 
-  console.log(textureDOM)
-
   return (
     <>
-      <Html zIndexRange={[-1, -10]} prepend className="z-10 flex w-full text-center">
+      <Html zIndexRange={[-1, -10]} prepend className="z-10 mt-10 w-full px-5 text-center sm:mt-20 sm:px-10">
         <div ref={(el) => setDomEl(el)}>
           <h1 className="font-pixel text-4xl font-semibold text-primary_blue sm:text-7xl">Hi, This is Rodener</h1>
           <p className="mt-3 pb-2 font-outfit text-2xl text-secondary_red">Web Developer</p>

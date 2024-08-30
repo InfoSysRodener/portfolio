@@ -26,7 +26,7 @@ const Footer = () => {
         </ul>
       </div>
 
-      <p className="font-outfit text-sm font-semibold">&copy; {year} Rodener Dajes</p>
+      <p className="font-outfit text-sm text-gray-600 ">&copy; {year} Rodener Dajes</p>
     </footer>
   )
 }

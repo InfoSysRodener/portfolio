@@ -10,7 +10,7 @@ const config: Config = {
       },
       fontFamily: {
         outfit: ['var(--font-outfit)'],
-        pixel: ['var(--font-pixel)', 'sans-serif'],
+        pixel: ['var(--font-pixel)'],
         tagalog: ['var(--font-tagalog)'],
       },
       colors: {

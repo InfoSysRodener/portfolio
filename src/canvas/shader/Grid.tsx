@@ -26,12 +26,10 @@ const Grid = () => {
   })
 
   return (
-    <>
-      <group position={[0, -0.1, 0]}>
-        <mesh ref={plane1} geometry={planeGeometry} material={planeMaterial} rotation={[-Math.PI * 0.5, 0, 0]} />
-        <mesh ref={plane2} position={[0, 0, -planeLength]} rotation={[-Math.PI * 0.5, 0, 0]} geometry={planeGeometry} material={planeMaterial} />
-      </group>
-    </>
+    <group position={[0, -0.1, 0]}>
+      <mesh ref={plane1} geometry={planeGeometry} material={planeMaterial} rotation={[-Math.PI * 0.5, 0, 0]} />
+      <mesh ref={plane2} position={[0, 0, -planeLength]} rotation={[-Math.PI * 0.5, 0, 0]} geometry={planeGeometry} material={planeMaterial} />
+    </group>
   )
 }
 

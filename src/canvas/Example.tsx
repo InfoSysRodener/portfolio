@@ -5,14 +5,20 @@ import { InstancedRigidBodies, InstancedRigidBodyProps, RapierRigidBody, RigidBo
 
 import { useEffect, useMemo, useRef } from 'react'
 import * as THREE from 'three'
-import usePostProcess from '../templates/hooks/useProcess'
 
 export function Dog(props: any) {
   const { scene } = useGLTF('/dog.glb')
-
-  usePostProcess()
-
   return <primitive object={scene} {...props} position={[0, -1, 0]} />
+}
+
+export function TargetStand(props: any) {
+  const { scene } = useGLTF('/model/target.gltf')
+  return <primitive object={scene} {...props} position={[0, -1, 0]} scale={[5, 5, 5]} />
+}
+
+export function Stair(props: any) {
+  const { scene } = useGLTF('/model/stair.gltf')
+  return <primitive object={scene} {...props} position={[-20, 0, 0]} scale={[5, 5, 5]} />
 }
 
 export function Cube() {
@@ -29,8 +35,8 @@ export function Cube() {
       if (index !== undefined && rigidBodies.current) {
         const body = rigidBodies.current[index]
         if (body) {
-          body.applyImpulse({ x: 0, y: Math.random() * 100, z: 0 }, true)
-          body.applyTorqueImpulse({ x: 0, y: Math.random() * 100, z: 0 }, true)
+          body.applyImpulse({ x: 0, y: 100, z: -100 }, true)
+          body.applyTorqueImpulse({ x: 100, y: 100, z: 100 }, true)
         }
       }
     }
@@ -87,8 +93,17 @@ export function Floor() {
     <RigidBody type="fixed" restitution={0} friction={0.7}>
       <mesh position={[0, -1, 0]} rotation={[-Math.PI * 0.5, 0, 0]} receiveShadow>
         <planeGeometry args={[100, 100, 1]} />
-        <meshBasicMaterial opacity={0} color="#FDF0D5" />
+        <meshBasicMaterial opacity={0.1} color="#FDF0D5" transparent={true} />
       </mesh>
     </RigidBody>
+  )
+}
+
+export function FrameWall() {
+  return (
+    <mesh position={[0, -1, 0]} rotation={[0, 0, 0]} receiveShadow>
+      <planeGeometry args={[100, 100, 1]} />
+      <meshBasicMaterial color="#FDF0D5" opacity={0.1} transparent={true} />
+    </mesh>
   )
 }
