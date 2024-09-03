@@ -3,13 +3,14 @@ import { InView } from 'react-intersection-observer'
 import { useSpring, animated } from '@react-spring/web'
 
 type thumbailProps = {
+  onClick: () => void
   index: number
   imgPath: string
   altText: string
   title: string
 }
 
-const Thumbnail = ({ imgPath, index, altText, title }: thumbailProps) => {
+const Thumbnail = ({ imgPath, index, altText, title, onClick }: thumbailProps) => {
   const [props, api] = useSpring(() => ({
     opacity: 0,
     y: 35,
@@ -20,12 +21,12 @@ const Thumbnail = ({ imgPath, index, altText, title }: thumbailProps) => {
     <InView as="article">
       {({ inView, ref }) => {
         if (inView) {
-          api.start({ opacity: 1, y: 0, delay: 200 * index })
+          api.start({ opacity: 1, y: 0, delay: 100 * index })
         } else {
           api.start({ opacity: 0, y: 35 })
         }
         return (
-          <animated.div className={`relative m-auto my-5 h-44 w-64 cursor-pointer `} style={props}>
+          <animated.div onClick={onClick} className={`relative m-auto my-5 h-44 w-64 cursor-pointer `} style={props}>
             <div ref={ref} className={`rounded-xl bg-primary_red `}>
               <Image className="aspect-auto size-auto rounded-md" src={imgPath} width={256} height={142} alt={altText} priority />
             </div>

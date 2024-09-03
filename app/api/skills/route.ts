@@ -20,11 +20,15 @@ const data = [
     alt_text: 'Icon image of TypeScript',
   },
   {
+    name: 'Git',
+    src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg',
+    alt_text: 'Icon image of Git',
+  },
+  {
     name: 'Amazon Web Services',
     src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/AWS-Light.svg',
     alt_text: 'Icon image of AWS Amazon Web Services',
   },
-
   {
     name: 'ThreeJS',
     src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/ThreeJS-Light.svg',
@@ -55,11 +59,7 @@ const data = [
     src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Vite-Light.svg',
     alt_text: 'Icon image of Vite',
   },
-  {
-    name: 'Git',
-    src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Git.svg',
-    alt_text: 'Icon image of Git',
-  },
+
   {
     name: 'Firebase',
     src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/Firebase-Light.svg',
@@ -83,6 +83,11 @@ const data = [
   {
     name: 'NodeJS',
     src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NodeJS-Light.svg',
+    alt_text: 'Icon image of NodeJs',
+  },
+  {
+    name: 'NuxtJS',
+    src: 'https://raw.githubusercontent.com/tandpfun/skill-icons/main/icons/NuxtJS-Light.svg',
     alt_text: 'Icon image of NodeJs',
   },
 ]

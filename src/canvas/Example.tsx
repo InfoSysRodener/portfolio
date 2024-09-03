@@ -1,6 +1,6 @@
 'use client'
 import { useGLTF } from '@react-three/drei'
-import { useThree } from '@react-three/fiber'
+import { useFrame, useThree } from '@react-three/fiber'
 import { InstancedRigidBodies, InstancedRigidBodyProps, RapierRigidBody, RigidBody } from '@react-three/rapier'
 
 import { useEffect, useMemo, useRef } from 'react'
@@ -77,6 +77,10 @@ export function Cube() {
 
     return instances
   }, [])
+
+  useFrame((state, delta) => {
+    instancedMeshRef.current?.rotateY(delta * 0.1)
+  })
 
   return (
     <InstancedRigidBodies ref={rigidBodies} instances={instances}>

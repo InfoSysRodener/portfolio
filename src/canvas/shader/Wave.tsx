@@ -5,6 +5,7 @@ import * as THREE from 'three'
 import gsap from 'gsap'
 import { useFrame, useLoader } from '@react-three/fiber'
 import { useGSAP } from '@gsap/react'
+
 // import PixelMaterial from './Pixel'
 
 const Wave = ({ inView, imagePath }: { inView: boolean; imagePath: string }) => {

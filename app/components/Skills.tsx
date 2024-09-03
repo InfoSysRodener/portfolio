@@ -8,7 +8,7 @@ import Draggable from 'react-draggable'
 import { useState } from 'react'
 
 const SkillCard = (props: any) => (
-  <div className="relative my-1 inline-flex h-9 cursor-grab select-none items-center gap-2 rounded-lg bg-primary_red px-1 py-3 pr-2 text-primary_brown ">
+  <div className="relative my-1 inline-flex h-9 cursor-grab items-center gap-2 rounded-lg bg-primary_red px-1 py-3 pr-2 text-primary_brown ">
     <Image className="select-none" src={props.src} width={25} height={25} alt={props.alt_text} />
     <span className=" text-sm font-semibold ">{props.name}</span>
   </div>
