@@ -2,7 +2,7 @@ const data = [
   {
     img: '/arundaya/thumbnail.png',
     name: 'arundaya',
-    alt_text: 'Thumbnail Picture of Project arundaya',
+    alt_text: 'Image Picture of Project arundaya',
     website_link: 'https://www.arundaya.app',
     role: 'full stack dev',
     stack: ['nextjs', 'firebase', 'tailwindcss', 'typescript'],
@@ -21,12 +21,12 @@ const data = [
   {
     img: '/staking-project-seed/thumbnail.png',
     name: 'staking project seed',
-    alt_text: 'Thumbnail Picture of Project arundaya',
+    alt_text: 'Image Picture of Project arundaya',
     website_link: 'https://staking.projectseed.com',
     role: 'front end dev',
     stack: ['nextjs', 'tailwindcss'],
     description:
-      'A platform where users can participate in blockchain staking. Staking involves locking up cryptocurrency to support the operations of a blockchain network, and in return, users earn rewards.',
+      'A website where users can participate in blockchain staking. Staking involves locking up cryptocurrency to support the operations of a blockchain network, and in return, users earn rewards.',
     responsibility: [
       'Convert Figma designs into functional UI components.',
       'Collaborated with the blockchain team on front-end design and implementation',
@@ -35,7 +35,7 @@ const data = [
   {
     img: '/outlandodyssey/thumbnail.png',
     name: 'outland odyssey',
-    alt_text: 'Thumbnail Picture of Project outland odyssey',
+    alt_text: 'Image Picture of Project outland odyssey',
     website_link: 'https://outlandodyssey.com/',
     role: 'front end dev',
     stack: ['nextjs', 'tailwindcss', 'threejs', 'tailwindcss'],
@@ -51,7 +51,7 @@ const data = [
   {
     img: '/project-seed/thumbnail.png',
     name: 'project seed',
-    alt_text: 'Thumbnail Picture of Project project seed',
+    alt_text: 'Image Picture of Project project seed',
     website_link: 'https://projectseed.com',
     role: 'full stack dev',
     stack: ['reactjs', 'nodejs', 'threejs', 'tailwindcss'],
@@ -67,11 +67,11 @@ const data = [
   {
     img: '/selaras/thumbnail.png',
     name: 'selaras arts space',
-    alt_text: 'Thumbnail Picture of Project selaras arts space',
+    alt_text: 'Image Picture of Project selaras arts space',
     website_link: 'https://selarasartspace.netlify.app/',
     role: 'full stack dev',
     stack: ['nuxtjs', 'threejs', 'amazon web services'],
-    description: '',
+    description: 'A museum experience to showcase the artist&apos;s work, with the option to purchase art while exploring the gallery.',
     responsibility: [
       'Convert Figma designs into functional components.',
       'Simplify login by utilizing AWS Cognito for user authentication and AWS Amplify for hosting the site and managing the user database.',

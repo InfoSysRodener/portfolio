@@ -13,9 +13,9 @@ import { useStore } from './store'
 import Modal from './components/Modal'
 
 const Thumbnail = dynamic(() => import('@/components/Thumbnail'), { ssr: false })
-const Skills = dynamic(() => import('@/components/Skills'), { ssr: false })
+const Skills = dynamic(() => import('@/components/Skills'), { ssr: false, loading: () => <Loading height={'h-64'} /> })
 
-const View = dynamic(() => import('@/canvas/View').then((mod) => mod.View), { ssr: false })
+const View = dynamic(() => import('@/canvas/View').then((mod) => mod.View), { ssr: false, loading: () => <Loading height={'h-64'} /> })
 const Cube = dynamic(() => import('@/canvas/Example').then((mod) => mod.Cube), { ssr: false })
 const Floor = dynamic(() => import('@/canvas/Example').then((mod) => mod.Floor), { ssr: false })
 const Common = dynamic(() => import('@/canvas/View').then((mod) => mod.Common), { ssr: false })

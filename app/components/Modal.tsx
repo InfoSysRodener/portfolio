@@ -1,11 +1,10 @@
-/* eslint-disable tailwindcss/migration-from-tailwind-2 */
 import { FaX, FaSquareUpRight } from 'react-icons/fa6'
 import Image from 'next/image'
 import { useStore } from '../store'
 import { animated, useSpring, useSpringRef } from '@react-spring/web'
 import { useState, useEffect, Suspense } from 'react'
 import { fetcher } from '../utils'
-import Loading from './Loading'
+// import Loading from './Loading'
 import useSWR from 'swr'
 
 const Modal = () => {
@@ -31,6 +30,7 @@ const Modal = () => {
           y: 0,
           opacity: 1,
         },
+        config: { tension: 150, friction: 14 },
       })
     } else {
       document.body.style.overflow = 'auto'
@@ -60,7 +60,7 @@ const Modal = () => {
   const display = visible ? 'none' : ''
 
   const { data } = useSWR('/api/skills', fetcher)
-  if (!data) return <Loading />
+  if (!data) return
 
   const filteredData = data.filter((item: any) => experience.stack.some((keyword: any) => item.name.toLowerCase().includes(keyword)))
 
@@ -133,7 +133,7 @@ const Modal = () => {
           </footer>
         </div>
       </animated.div>
-      <animated.div style={{ display: display }} className="fixed inset-0 z-[9999] bg-black opacity-50" />
+      <div style={{ display: display }} className="fixed inset-0 z-[9999] bg-black opacity-50" />
     </>
   )
 }

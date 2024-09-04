@@ -41,7 +41,7 @@ const Skills = () => {
   if (!data) return <Loading />
 
   return (
-    <div className="gridLine relative flex flex-wrap gap-2 sm:p-5">
+    <div className="gridLine relative flex h-64 flex-wrap gap-2 sm:p-5">
       {data.map((item: any, index: any) => (
         <DraggableSkillCard key={index} src={item.src} alt_text={item.alt_text} name={item.name} />
       ))}

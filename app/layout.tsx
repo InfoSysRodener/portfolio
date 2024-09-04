@@ -31,7 +31,7 @@ const noto_sans_tagalog = Noto_Sans_Tagalog({
 
 export const metadata: Metadata = {
   title: 'Rodener Dajes Web Dev',
-  description: 'A Lazy Developer But Cute',
+  description: 'A Cute Developer',
 }
 
 export default function RootLayout({
