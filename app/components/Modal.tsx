@@ -6,7 +6,6 @@ import { useState, useEffect, Suspense } from 'react'
 import { fetcher } from '../utils'
 // import Loading from './Loading'
 import useSWR from 'swr'
-import { div } from 'three/examples/jsm/nodes/Nodes.js'
 
 const Modal = () => {
   const api = useSpringRef()
