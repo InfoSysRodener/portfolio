@@ -6,6 +6,7 @@ import { useState, useEffect, Suspense } from 'react'
 import { fetcher } from '../utils'
 // import Loading from './Loading'
 import useSWR from 'swr'
+import { div } from 'three/examples/jsm/nodes/Nodes.js'
 
 const Modal = () => {
   const api = useSpringRef()
@@ -67,7 +68,7 @@ const Modal = () => {
   return (
     <>
       <animated.div style={{ ...springs, display: display }} className="fixed inset-0 z-[99999] flex size-full items-center justify-center px-5">
-        <div className=" relative h-auto w-[576px]  max-w-xl bg-white">
+        <div className=" relative h-auto w-[576px]  max-w-xl bg-primary_brown">
           <header className="relative">
             <FaX
               className="absolute right-5 top-5 z-10 size-5 cursor-pointer rounded-full bg-primary_blue p-1 text-primary_brown transition duration-300 ease-in-out hover:bg-secondary_red"
@@ -106,7 +107,7 @@ const Modal = () => {
               <p className="text-xs ">{experience.description}</p>
             </div>
           </section>
-          <section className="mb-10 p-5">
+          <section className="p-5">
             <div className="mb-5">
               <h2 className=" text-sm font-semibold">Responsibilities</h2>
               <ul className={`${showMore ? 'h-12' : 'h-auto'} overflow-hidden`}>
@@ -123,9 +124,14 @@ const Modal = () => {
               )}
             </div>
           </section>
-          <section></section>
-          <footer className="absolute bottom-0 left-0 w-52">
-            <div className="m-5 cursor-pointer  border-2 border-primary_blue p-1 text-center font-pixel text-primary_blue hover:border-secondary_red hover:bg-primary_red hover:text-primary_brown">
+          <footer className=" flex w-full items-center justify-start px-5">
+            <div
+              onClick={setModal}
+              className="cursor-pointer  border-2 border-primary_blue bg-primary_blue p-1 px-5 text-center font-pixel text-xs text-primary_brown hover:border-primary_red hover:bg-primary_red hover:text-primary_brown"
+            >
+              Close
+            </div>
+            <div className="m-5 cursor-pointer border-2  border-primary_blue p-1 px-5 text-center font-pixel text-primary_blue hover:border-primary_red hover:bg-primary_red hover:text-primary_brown">
               <a href={experience.website_link} target="_blank" className=" flex items-center justify-center gap-2 text-xs ">
                 View Website <FaSquareUpRight />
               </a>
