@@ -85,11 +85,11 @@ const Modal = () => {
           </header>
           <section className="grid grid-cols-2 p-5">
             <div>
-              <h2 className=" text-sm font-semibold">Role</h2>
+              <h2 className=" font-pixel text-sm font-semibold text-primary_blue">Role</h2>
               <p className="font-outfit text-xs capitalize">{experience.role}</p>
             </div>
             <div>
-              <h2 className=" text-sm font-semibold">Tech Stack</h2>
+              <h2 className=" font-pixel text-sm font-semibold text-primary_blue">Tech Stack</h2>
               <ul className="w-full">
                 {filteredData.map((item: any, index: number) => (
                   <li className="mx-1 inline-flex items-center gap-1" key={index}>
@@ -102,13 +102,13 @@ const Modal = () => {
           </section>
           <section className=" px-5 ">
             <div>
-              <h3 className="text-sm font-semibold capitalize">{experience.name}</h3>
+              <h3 className="font-pixel text-sm font-semibold capitalize text-primary_blue">{experience.name}</h3>
               <p className="text-xs ">{experience.description}</p>
             </div>
           </section>
           <section className="p-5">
             <div className="mb-5">
-              <h2 className=" text-sm font-semibold">Responsibilities</h2>
+              <h2 className=" font-pixel text-sm font-semibold text-primary_blue">Responsibilities</h2>
               <ul className={`${showMore ? 'h-12' : 'h-auto'} overflow-hidden`}>
                 {experience.responsibility.map((item: any, index: number) => (
                   <li className="text-xs" key={index}>
@@ -117,7 +117,7 @@ const Modal = () => {
                 ))}
               </ul>
               {showMore && (
-                <p className="mt-1 inline-flex cursor-pointer border p-1 text-xs text-primary_red" onClick={() => setShowMore(false)}>
+                <p className="mt-1 inline-flex cursor-pointer border p-1 text-xs text-secondary_red" onClick={() => setShowMore(false)}>
                   Show more...
                 </p>
               )}
