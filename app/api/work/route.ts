@@ -71,7 +71,7 @@ const data = [
     website_link: 'https://selarasartspace.netlify.app/',
     role: 'full stack dev',
     stack: ['nuxtjs', 'threejs', 'amazon web services'],
-    description: 'A museum experience to showcase the artist&apos;s work, with the option to purchase art while exploring the gallery.',
+    description: 'A museum experience to showcase the artist’s work, with the option to purchase art while exploring the gallery.',
     responsibility: [
       'Convert Figma designs into functional components.',
       'Simplify login by utilizing AWS Cognito for user authentication and AWS Amplify for hosting the site and managing the user database.',
