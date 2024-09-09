@@ -4,6 +4,7 @@ import { Outfit, Pixelify_Sans, Noto_Sans_Tagalog } from 'next/font/google'
 import './globals.css'
 // import 'locomotive-scroll/dist/locomotive-scroll.css'
 import { Layout } from '@/src/dom/Layout'
+import { Analytics } from '@vercel/analytics/react'
 
 const outfit = Outfit({
   weight: ['400'],
@@ -47,6 +48,7 @@ export default function RootLayout({
       </head>
       <body className={`${outfit.variable} ${pixelify_sans.variable} ${noto_sans_tagalog.variable}`}>
         <Layout>{children}</Layout>
+        <Analytics />
       </body>
     </html>
   )
