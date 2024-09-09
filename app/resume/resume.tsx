@@ -160,7 +160,7 @@ export default function Resume() {
             <h3 className="text-lg font-semibold">Fourello</h3>
             <div className="flex items-center">
               <FaLocationDot className="size-3 text-gray-500" />
-              <p className="text-xs">Mandaluyong City</p>
+              <p className="text-xs text-gray-400">Mandaluyong City</p>
             </div>
             <div className="absolute right-5 text-sm text-gray-500">2018-2020</div>
           </header>

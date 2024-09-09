@@ -32,6 +32,7 @@ const noto_sans_tagalog = Noto_Sans_Tagalog({
 export const metadata: Metadata = {
   title: 'Rodener Dajes Web Dev',
   description: 'A Cute Developer',
+  metadataBase: new URL('https://www.rodener.dev'),
 }
 
 export default function RootLayout({
@@ -41,6 +42,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={`${outfit.variable} ${pixelify_sans.variable} ${noto_sans_tagalog.variable}`}>
         <Layout>{children}</Layout>
       </body>
