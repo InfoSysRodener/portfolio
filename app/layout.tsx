@@ -45,6 +45,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
+        <meta property="og:image" content="/metaimage.jpg" />
       </head>
       <body className={`${outfit.variable} ${pixelify_sans.variable} ${noto_sans_tagalog.variable}`}>
         <Layout>{children}</Layout>
