@@ -64,7 +64,8 @@ export default function Resume() {
       <section className="my-2 bg-gray-100">
         <p className="my-2 px-2 py-3 text-sm">
           {/* Experienced web developer with a passion for creating attractive and interactive websites that meet customer needs and exceed expectations. */}
-          Skilled in both front-end and back-end development, with the ability to quickly adapt to any tech stack. Committed to delivering high-quality, innovative web solutions and optimizing user experiences.
+          Skilled in both front-end and back-end development, with the ability to quickly adapt to any tech stack. Committed to delivering
+          high-quality, innovative web solutions and optimizing user experiences.
         </p>
       </section>
       <section>
@@ -108,14 +109,16 @@ export default function Resume() {
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold">Server</h3>
+            <h3 className="font-semibold">Server / Database</h3>
             <ul>
               <li>AWS</li>
               <li>Vercel</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
             </ul>
           </div>
           <div>
-            <h3 className="font-semibold">Backend</h3>
+            <h3 className="font-semibold">Backend </h3>
             <ul>
               <li>Node js</li>
               <li>Firebase</li>
@@ -124,10 +127,41 @@ export default function Resume() {
           </div>
         </section>
       </section>
-      <section>
+      <section className="mb-5">
         <header className="relative mb-3 after:absolute after:right-0 after:top-1/2 after:-z-10 after:block after:h-0.5 after:w-full after:bg-gray-300">
           <h2 className="inline-block bg-white pr-5 font-bold text-blue-500">WORK EXPERIENCE</h2>
         </header>
+        <section className="relative mb-5">
+          <header>
+            <div className="flex gap-1">
+              <h3 className="text-lg font-semibold">
+                Indonesia Kaya <span className="text-base text-gray-500"> - Freelance</span>
+              </h3>
+              <div className="flex items-center">
+                <FaLocationDot className="size-3 text-gray-500" />
+                <p className="text-xs text-gray-400">indonesia</p>
+              </div>
+              <div className="absolute right-5 text-sm text-gray-500">2023-2024</div>
+            </div>
+            <div className="flex items-center gap-1 text-sm">
+              <FaLink className="size-3" />
+              <a className="text-blue-400" target="_blank" href="https://arundaya.app/">
+                arundaya.app
+              </a>
+            </div>
+          </header>
+          <div>
+            <p className="text-sm">
+              Responsible for translating designer mock-ups into functional web interfaces using nextjs with firebase integration for backend.
+            </p>
+            <br />
+            <ul className="ml-10 list-disc text-sm">
+              <li>Simplify and implement the social media login system</li>
+              <li>Develop mini game and Avatar creation </li>
+              <li>Validate & Ensure the data are synchronize for web and unity.</li>
+            </ul>
+          </div>
+        </section>
         <section className="relative mb-5">
           <header>
             <div className="flex gap-1">
@@ -146,12 +180,46 @@ export default function Resume() {
             </div>
           </header>
           <div>
-            <p className="text-sm">Responsible for translating designer mock-ups into functional web interfaces, collaborating closely with both the Design and Blockchain teams.</p>
+            <p className="text-sm">
+              Responsible for translating designer mock-ups into functional web interfaces, collaborating closely with both the Design and Blockchain
+              teams.
+            </p>
             <br />
             <ul className="ml-10 list-disc text-sm">
               <li>Implemented a responsive design that allowed the application to be used across multiple devices.</li>
               <li>Adhered to SEO best practices.</li>
               <li>Optimized website performance by converting images to web-friendly formats/extensions, ensuring faster loading.</li>
+            </ul>
+          </div>
+        </section>
+        <section className="relative mb-5">
+          <header>
+            <div className="flex gap-1">
+              <h3 className="text-lg font-semibold">
+                SelarasArtSpace <span className="text-base text-gray-500"> - Freelance</span>
+              </h3>
+              <div className="flex items-center">
+                <FaLocationDot className="size-3 text-gray-500" />
+                <p className="text-xs text-gray-400">indonesia</p>
+              </div>
+              <div className="absolute right-5 text-sm text-gray-500">2020-2021</div>
+            </div>
+            <div className="flex items-center gap-1 text-sm">
+              <FaLink className="size-3" />
+              <a className="text-blue-400" target="_blank" href="https://selarasartspace.com/">
+                selarasartspace.com
+              </a>
+            </div>
+          </header>
+          <div>
+            <p className="text-sm">
+              Responsible for implementing a complete web solution using NuxtJS for front-end and server infrastructure using AWS. Integrate AWS
+              Cognito for secure user Authentication and AWS Amplify for seamless deployment and hosting.
+            </p>
+            <br />
+            <ul className="ml-10 list-disc text-sm">
+              <li>Display information of the artist and the painting outside the three.js canvas.</li>
+              <li>Implement web controls to enhance the user experience and ensure smooth interactions.</li>
             </ul>
           </div>
         </section>
@@ -171,17 +239,22 @@ export default function Resume() {
             </a>
           </div>
           <div>
-            <p className="text-sm">Responsible for connecting AWS services, creating RESTful api endpoint with documentation. and working as an front-end developer for Admin panel, focusing on analytics and data management.</p>
+            <p className="text-sm">
+              Responsible for connecting AWS services, creating RESTful api endpoint with documentation. and working as an front-end developer for
+              Admin panel, focusing on analytics and data management.
+            </p>
             <br />
             <ul className="ml-10 list-disc text-sm">
               <li>Developed a RESTful API that served as a backend for mobile app and web application, using Laravel.</li>
-              <li>Developed Admin page designed to showcase analytics data derived from their mobile app. specifically tailored for business owners.</li>
+              <li>
+                Developed Admin page designed to showcase analytics data derived from their mobile app. specifically tailored for business owners.
+              </li>
               <li>I set up a server, checked and maintained AWS services under the guidance of a my senior developer, ensuring proper execution.</li>
             </ul>
           </div>
         </section>
       </section>
-      <div className="print-page-break"></div>
+
       <section>
         <header className="relative mb-3 after:absolute after:right-0 after:top-1/2 after:-z-10 after:block after:h-0.5 after:w-full after:bg-gray-300">
           <h2 className="inline-block bg-white pr-5 font-bold text-blue-500">ONLINE COURSES</h2>
@@ -197,7 +270,10 @@ export default function Resume() {
               threejs-journey.com
             </a>
           </div>
-          <p className="pt-2  text-sm">Through practical practice in the Three.js course, I&apos;ve gained valuable skills and experience in utilizing Three.js to create immersive 3D web content.</p>
+          <p className="pt-2  text-sm">
+            Through practical practice in the Three.js course, I&apos;ve gained valuable skills and experience in utilizing Three.js to create
+            immersive 3D web content.
+          </p>
         </section>
         <section className="pb-3">
           <div className="flex items-end gap-1">
@@ -211,7 +287,8 @@ export default function Resume() {
             </a>
           </div>
           <p className="pt-2  text-sm">
-            The NFT Marketplace Course Mastery teaches the use of Next.js, Tailwind, and popular Web3 concepts and technologies, including smart contract development, Solidity, IPFS, and more, providing hands-on, practical experience.
+            The NFT Marketplace Course Mastery teaches the use of Next.js, Tailwind, and popular Web3 concepts and technologies, including smart
+            contract development, Solidity, IPFS, and more, providing hands-on, practical experience.
           </p>
         </section>
       </section>
@@ -228,7 +305,7 @@ export default function Resume() {
             </h4>
           </div>
           <div>
-            <p className="text-sm font-semibold text-gray-900">May 2018</p>
+            <p className="text-sm text-gray-500">2014 - 2018</p>
           </div>
         </section>
       </section>
